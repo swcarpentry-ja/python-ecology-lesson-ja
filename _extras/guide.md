@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Instructor Notes"
-permalink: /guide/
+permalink: /ja/guide/
 ---
 
 # Challenge solutions
@@ -154,7 +154,7 @@ surveys_df.groupby('plot_id').mean()["weight"].plot(kind='bar')
 ~~~
 {: .language-python}
 
-![average weight across all species for each plot](../fig/01_chall_bar_meanweight.png)
+![average weight across all species for each plot](../../../fig/01_chall_bar_meanweight.png)
 
 * Create a plot of total males versus total females for the entire datase.
 
@@ -162,7 +162,7 @@ surveys_df.groupby('plot_id').mean()["weight"].plot(kind='bar')
 surveys_df.groupby('sex').count()["record_id"].plot(kind='bar')
 ~~~
 {: .language-python}
-![total males versus total females for the entire dataset](../fig/01_chall_bar_totalsex.png)
+![total males versus total females for the entire dataset](../../../fig/01_chall_bar_totalsex.png)
 
 ## 03-index-slice-subset
 
@@ -285,7 +285,7 @@ surveys_df[~surveys_df["sex"].isin(['M', 'F'])]
   ~~~
   {: .language-python}
 
-  ![average weight for each plot per sex](../fig/02_chall_stack_levelissue.png)
+  ![average weight for each plot per sex](../../../fig/02_chall_stack_levelissue.png)
 
   However, due to the `unstack` command, the legend header contains two levels. In order to remove
   this, the column naming needs to be simplified:
@@ -294,7 +294,7 @@ surveys_df[~surveys_df["sex"].isin(['M', 'F'])]
   ~~~
   {: .language-python}
 
-  ![average weight for each plot per sex](../fig/02_chall_stack_level.png)
+  ![average weight for each plot per sex](../../../fig/02_chall_stack_level.png)
 
 ## 04-data-types-and-format
 
@@ -340,7 +340,7 @@ weight_year.plot(kind="bar")
 plt.tight_layout()  # tip(!)
 ~~~
 {: .language-python}
-![average weight for each year, grouped by sex](../fig/04_chall_weight_year.png)
+![average weight for each year, grouped by sex](../../../fig/04_chall_weight_year.png)
 ~~~
 # writing to file:
 weight_year.to_csv("weight_for_year.csv")
@@ -366,7 +366,7 @@ merged_left.groupby(["plot_id"])["taxa"].nunique().plot(kind='bar')
 ~~~
 {: .language-python}
 
-![taxa per plot](../fig/04_chall_ntaxa_per_site.png)
+![taxa per plot](../../../fig/04_chall_ntaxa_per_site.png)
 
 *Suggestion*: It is also possible to plot the number of individuals for each taxa in each plot
 (stacked bar chart):
@@ -377,7 +377,7 @@ plt.legend(loc='upper center', ncol=3, bbox_to_anchor=(0.5, 1.05))
 {: .language-python}
 (the legend otherwise overlaps the bar plot)
 
-![taxa per plot](../fig/04_chall_taxa_per_site.png)
+![taxa per plot](../../../fig/04_chall_taxa_per_site.png)
 
 **2. taxa by sex by plot**:
 Providing the Nan values with the M|F values (can also already be changed to 'x'):
@@ -396,7 +396,7 @@ plt.legend(loc='upper center', ncol=3, bbox_to_anchor=(0.5, 1.08),
 ~~~
 {: .language-python}
 
-![taxa per plot per sex](../fig/04_chall_ntaxa_per_site_sex.png)
+![taxa per plot per sex](../../../fig/04_chall_ntaxa_per_site_sex.png)
 
 *Suggestion (for discussion only)*:
 
@@ -410,7 +410,7 @@ plt.legend(loc='upper center', ncol=3, bbox_to_anchor=(0.5, 1.15),
 ~~~
 {: .language-python}
 
-![taxa per plot per sex](../fig/04_chall_sex_taxa_site_intro.png)
+![taxa per plot per sex](../../../fig/04_chall_sex_taxa_site_intro.png)
 
 This is not really the best plot choice: not readable,... A first option to make this better, is to
 make facets. However, pandas/matplotlib do not provide this by default. Just as a pure matplotlib
@@ -429,7 +429,7 @@ axs[0].legend(loc='upper center', ncol=5, bbox_to_anchor=(0.5, 1.3),
 ~~~
 {: .language-python}
 
-![taxa per plot per sex](../fig/04_chall_sex_taxa_site.png)
+![taxa per plot per sex](../../../fig/04_chall_sex_taxa_site.png)
 
 However, it would be better to link to [Seaborn][seaborn] and [Altair][altair] for its kind of
 multivariate visualisations.
@@ -469,7 +469,7 @@ plt.xlabel("Diversity index")
 ~~~
 {: .language-python}
 
-![taxa per plot per sex](../fig/04_chall_diversity_index.png)
+![taxa per plot per sex](../../../fig/04_chall_diversity_index.png)
 
 
 ## 06-loops-and-functions

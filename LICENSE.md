@@ -2,6 +2,7 @@
 layout: page
 title: "Licenses"
 root: .
+permalink: /ja/LICENSE/
 ---
 ## Instructional Material
 

@@ -1,6 +1,7 @@
 ---
 layout: page
-permalink: /aio/
+permalink: /ja/aio/
+permalink: /ja/aio/
 ---
 
 {% include base_path.html %}

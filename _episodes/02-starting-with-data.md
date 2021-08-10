@@ -563,7 +563,7 @@ species_counts.plot(kind='bar');
 ~~~
 {: .language-python}
 
-![Weight by Species Site](../fig/countPerSpecies.png)
+![Weight by Species Site](../../../fig/countPerSpecies.png)
 Count per species site
 
 We can also look at how many animals were captured in each site:
@@ -618,7 +618,7 @@ total_count.plot(kind='bar');
 > ~~~
 > {: .language-python }
 >
-> ![Stacked Bar Plot](../fig/stackedBar1.png)
+> ![Stacked Bar Plot](../../../fig/stackedBar1.png)
 >
 > * You can use the `.unstack()` method to transform grouped data into columns
 > for each plotting.  Try running `.unstack()` on some DataFrames above and see
@@ -691,7 +691,7 @@ total_count.plot(kind='bar');
 >> ~~~
 >> {: .language-python}
 >>
->> ![Stacked Bar Plot](../fig/stackedBar.png)
+>> ![Stacked Bar Plot](../../../fig/stackedBar.png)
 > {: .solution}
 {: .challenge}
 

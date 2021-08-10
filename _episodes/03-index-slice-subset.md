@@ -123,8 +123,8 @@ a = [1, 2, 3, 4, 5]
 ~~~
 {: .language-python}
 
-![indexing diagram](../fig/slicing-indexing.png)
-![slicing diagram](../fig/slicing-slicing.png)
+![indexing diagram](../../../fig/slicing-indexing.png)
+![slicing diagram](../../../fig/slicing-slicing.png)
 
 
 > ## Challenge - Extracting data

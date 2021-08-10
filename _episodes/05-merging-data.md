@@ -239,7 +239,7 @@ Inner joins yield a DataFrame that contains only rows where the value being
 joins exists in BOTH tables. An example of an inner join, adapted from [this
 page](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/) is below:
 
-![Inner join -- courtesy of codinghorror.com](../fig/inner-join.png)
+![Inner join -- courtesy of codinghorror.com](../../../fig/inner-join.png)
 
 The pandas function for performing joins is called `merge` and an Inner join is
 the default option:
@@ -320,7 +320,7 @@ for those columns in the resulting joined DataFrame.
 Note: a left join will still discard rows from the `right` DataFrame that do not
 have values for the join key(s) in the `left` DataFrame.
 
-![Left Join](../fig/left-join.png)
+![Left Join](../../../fig/left-join.png)
 
 A left join is performed in pandas by calling the same `merge` function used for
 inner join, but using the `how='left'` argument:

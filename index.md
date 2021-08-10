@@ -1,6 +1,7 @@
 ---
 layout: lesson
-root: .
+root: /ja/
+permalink: /ja/index.html
 
 maintainers:
   - April Wright

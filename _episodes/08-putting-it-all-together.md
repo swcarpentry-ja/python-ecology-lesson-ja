@@ -115,7 +115,7 @@ plt.show() # not necessary in Jupyter Notebooks
 ~~~
 {: .language-python}
 
-![Scatter plot of survey data set](../fig/08_scatter_surveys.png)
+![Scatter plot of survey data set](../../../fig/08_scatter_surveys.png)
 
 > ## Tip
 > By default, matplotlib creates a figure in a separate window. When using
@@ -165,7 +165,7 @@ plt.hist(sample_data)
 ~~~
 {: .language-python}
 
-![Histogram of 1000 samples from normal distribution](../fig/08-normal-distribution.png)
+![Histogram of 1000 samples from normal distribution](../../../fig/08-normal-distribution.png)
 
 > ## Tip: Cross-Platform Visualization of Figures
 > Jupyter Notebooks make many aspects of data analysis and visualization much simpler. This includes
@@ -209,7 +209,7 @@ ax2.hist(beta_draws)
 ~~~
 {: .language-python}
 
-![Plot with additional axes](../fig/08-dualdistribution.png)
+![Plot with additional axes](../../../fig/08-dualdistribution.png)
 
 > ## Challenge - Drawing from distributions
 > Have a look at the NumPy
@@ -240,7 +240,7 @@ fig.suptitle('Scatter plot of weight versus hindfoot length', fontsize=15)
 ~~~
 {: .language-python}
 
-![Extended version of scatter plot surveys](../fig/08_scatter_surveys_extended.png)
+![Extended version of scatter plot surveys](../../../fig/08_scatter_surveys_extended.png)
 
 To retrieve the matplotlib figure object from plotnine for customization, use the `draw()` function in plotnine:
 
@@ -262,7 +262,7 @@ plt.show() # not necessary in Jupyter Notebooks
 ~~~
 {: .language-python}
 
-![Extended version of plotnine scatter plot](../fig/08_scatter_surveys_plotnine.png)
+![Extended version of plotnine scatter plot](../../../fig/08_scatter_surveys_plotnine.png)
 
 > ## Challenge - Pandas and matplotlib
 > Load the streamgage data set with Pandas, subset the week of the 2013 Front Range flood
@@ -322,7 +322,7 @@ plt.show() # not necessary in Jupyter Notebooks
 > > ~~~
 > > {: .language-python}
 > >
-> > ![Flood event plot](../fig/08_flood_event.png)
+> > ![Flood event plot](../../../fig/08_flood_event.png)
 > {: .solution}
 {: .challenge}
 
